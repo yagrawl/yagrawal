@@ -5,6 +5,11 @@ font-family: 'Abel', sans-serif;
 font-family: 'Quattrocento Sans', sans-serif;
 font-family: 'Source Serif Pro', serif;*/
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
+.headingContainer {
+    margin: 25px 100px 
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
 }

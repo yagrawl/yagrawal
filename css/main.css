@@ -10,6 +10,15 @@ font-family: 'Source Serif Pro', serif;*/
 }
 
 .heading {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Abel', sans-serif;
     font-size: 48px;
+}
+
+.introParaContainer {
+    margin: 40px 120px 120px 
+}
+
+.introPara {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
 }

@@ -1,16 +1,39 @@
 /*font-family: 'Open Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Abel', sans-serif;
-font-family: 'Quattrocento Sans', sans-serif;
-font-family: 'Source Serif Pro', serif;*/
+font-family: 'Montserrat', sans-serif; */
+
+@font-face {
+    font-family: Alexandria;
+    src: url(fonts/Alexandria.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato.ttf);
+}
+
+@font-face {
+    font-family: Axis;
+    src: url(fonts/Axis.otf);
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url(fonts/HKGrotesk-Regular.otf);
+    font-weight: Regular;
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url(fonts/HKGrotesk-Light.otf);
+    font-weight: Light;
+}
 
 .headingContainer {
     margin: 25px 100px 
 }
 
 .heading {
-    font-family: 'Abel', sans-serif;
+    font-family: Axis, sans-serif;
     font-size: 48px;
 }
 
@@ -19,6 +42,7 @@ font-family: 'Source Serif Pro', serif;*/
 }
 
 .introPara {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Grotesk, sans-serif;
     font-size: 24px;
+    font-weight: Regular;
 }

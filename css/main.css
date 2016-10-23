@@ -34,7 +34,7 @@ font-family: 'Montserrat', sans-serif; */
 
 .heading {
     font-family: Axis, sans-serif;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 .introParaContainer {
@@ -46,3 +46,17 @@ font-family: 'Montserrat', sans-serif; */
     font-size: 24px;
     font-weight: Regular;
 }
+
+.progressbar {
+    margin: 90px 0px;
+    position: relative; 
+    top: 0; 
+    left: 0; 
+}
+
+.dailyUi {
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+}
+

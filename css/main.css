@@ -62,24 +62,27 @@ font-family: 'Montserrat', sans-serif; */
     height: 200px;
 }
 
-.desaturate {
-    filter: grayscale(100%); 
-    -webkit-filter: grayscale(100%); 
-    filter: gray; 
-    -webkit-filter: grayscale(1); 
+.checkxbg {
+    background-color: #4F474A;
+    height: 200px;
 }
 
-.desaturate:hover {
-    filter: grayscale(0%);
-    filter: none;
-    -webkit-filter: grayscale(0); 
-}
 
-img.displayed 
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
+img.inact:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+} 
 
+img.inact{
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+}
 

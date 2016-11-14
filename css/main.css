@@ -47,16 +47,39 @@ font-family: 'Montserrat', sans-serif; */
     font-weight: Regular;
 }
 
-.progressbar {
-    margin: 90px 0px;
-    position: relative; 
-    top: 0; 
-    left: 0; 
+.projectbox {
+    border-color: #D3D3D3;
+    border-style: solid;
+    border-width: 0.5px;
+}
+.checkbg {
+    background-color: #D3D3D3;
+    height: 200px;
 }
 
-.dailyUi {
-    position: absolute; 
-    top: 30%; 
-    left: 50%; 
+.checkwbg {
+    background-color: white;
+    height: 200px;
 }
+
+.desaturate {
+    filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%); 
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+}
+
+.desaturate:hover {
+    filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0); 
+}
+
+img.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
 

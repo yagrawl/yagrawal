@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Alexandria;
+    src: url(fonts/Alexandria.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato.ttf);
+}
+
+@font-face {
+    font-family: Axis;
+    src: url(fonts/Axis.otf);
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url(fonts/HKGrotesk-Regular.otf);
+    font-weight: Regular;
+}
+
+@font-face {
+    font-family: Grotesk;
+    src: url(fonts/HKGrotesk-Light.otf);
+    font-weight: Light;
+}
+
+.heading {
+    font-family: Axis, sans-serif;
+    font-size: 36px;
+}
+
+.introPara {
+    font-family: Grotesk, sans-serif;
+    font-size: 24px;
+    font-weight: Regular;
+}
+
+.introParaContainer {
+    margin: 40px 10% 10% 
+}
+
+
+.mainDivBg {
+    background: url('../img/moviebot/bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

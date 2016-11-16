@@ -58,7 +58,7 @@
 }
 
 .errorHandling {
-    background: url('../img/moviebot/heroku.png') no-repeat center center fixed;
+    background: url('../img/moviebot/errorBg.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

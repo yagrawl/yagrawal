@@ -32,13 +32,13 @@
 
         </div>
         <div class="row">
+                    <p class="sectionTitle">The Start</p>
+                    <span style="display:block; height: 10px;"> </span>
                 <div class="col-md-1 col-xs-1">
                 </div>
-                <div class="col-md-3 col-xs-3">
-                    <img src="img/moviebot/StartBot.png" class="img-responsive"  width="270"> </img>
-                </div>
-                <div class="col-md-7 col-xs-7">
+                <div class="col-md-10 col-xs-10">
                     <p class="introPara">
+                        <img src="img/moviebot/StartBot.png" class="imgLeft"  width="270"> </img>
                         I began with the basics. Making a Facebook page, setting up webhooks, etc by simply following the documentation. Now I had a functioning but useless bot that returned back whatever was sent. That's it! I apparently started this on June 20th, 2016. 
                     </p>
                 </div>
@@ -55,6 +55,251 @@
                          Having had no prior experience in JavaScript it all came down to figuring out how things actually worked. I started working with the documentation and tried to sent hard-coded image links and templates to make sure I actually knew how it was working. 
                          After trying, testing and reading, I finally figured out how to use all the basic tricks to send messages and templates. Now I had to actually have it send movie information using TMDb API. That took me a few days because I had never used an API before this. After a lot of trial and error I suddenly had a movie name that wasn't hardcoded, sent from the bot.
                     </p>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                </div>
+            </div>
+            <span style="display:block; height: 30px;"> </span>
+
+            <div class="row">
+                <div class="col-md-1 col-xs-1">
+                </div>
+                <div class="col-md-10 col-xs-10">
+                    <p class="introPara">
+                        <img src="img/moviebot/HiStart.png" class="imgRight" width="275px"></img>
+                        Now I could actually begin using the bot. I was using <code> Math.floor((Math.random() * 1000) + 1) </code> to create random movieIDs to get informtion from the API. That was not a good way to work through the API because most of the times the API wouldn't return anything and when it did, it was a weird movie from the 1940s. That was a small hurdle though. I then implemented Random movies, Genre based search and the movies playing in theatres. All these were handled by postbacks instead of by user commands.
+                    </p>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                </div>
+            </div>
+            <span style="display:block; height: 30px;"> </span>
+            <div class="row">
+                <div class="col-md-1 col-xs-1">
+                </div>
+                <div class="col-md-10 col-xs-10">
+                    <p class="introPara">
+                        <img src="img/moviebot/helpOld.png" class="imgLeft" width="275px"></img>
+                        I was essentially working on a bunch of if-else and switch statements. For example, If the user input 'Hi' or, 'Hey' my bot would return 'Hey!' but if someone were to say 'Hii', my bot would crash! I didn't actually figure this out until I gave this to a friend of mine to try. I tried a 'Help desk' that would be returned if the input wasn't a predefined statement. Now that I look at it with fresh eyes, the 'Help Desk' message I used was clunky, intimidating and maybe useless.
+                    </p>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                </div>
+            </div>
+            <span style="display:block; height: 40px;"> </span>
+            <div class="errorHandling">
+                <span style="display:block; height: 40px;"> </span>
+                <p class="sectionTitle" style="color:white">Error Handling</p>
+                <span style="display:block; height: 10px;"> </span>
+                <p class="errorText">
+                     There was hardly a time when I commited the code and it worked properly. There was always some kind of missing bracket, or a semi-colon. Messenger Bots don't really have a proper compiler per se, so Heroku's logs were the way to solve this. Most of the times the errors were small, but whenever their was a logic error, or the bot failed for some unknown reason, I used the logs.
+                </p>
+                <span style="display:block; height: 40px;"> </span>
+
+
+            </div>
+            <span style="display:block; height: 40px;"> </span>
+            <div class="row">
+                <p class="sectionTitle" >&nbsp; The Progress</p>
+                <span style="display:block; height: 20px;"> </span>
+                <div class="col-md-1 col-xs-1">
+                </div>
+                <div class="col-md-10 col-xs-10">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <img src="img/moviebot/Movie1.png" class="img-responsive" width="300px"><img>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <img src="img/moviebot/Movie2.png" class="img-responsive" width="300px"><img>
+                    </div>
+                    <div class="clearfix visible-sm"></div>
+                    <div class="clearfix visible-xs"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <img src="img/moviebot/Movie3.png" class="img-responsive" width="300px"><img>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <img src="img/moviebot/Movie4.png" class="img-responsive" width="300px"><img>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                </div>
+            </div>
+            <span style="display:block; height: 40px;"> </span>
+            <div class="row">
+                <div class="col-md-1 col-xs-1">
+                </div>
+                <div class="col-md-10 col-xs-10">
+                    <div class="col-md-4">
+                        <p class="introPara">
+                            The 'Genre Based' search however was horrible. It was a giant clunky list of major genres. It was annoying to look at and difficult to select from but that's all I knew at that moment.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="col-md-4 col-xs-4 ">
+                            <img src="img/moviebot/genre1.png" class="img-responsive" width="300px"><img>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <img src="img/moviebot/genre2.png" class="img-responsive" width="300px"><img>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <img src="img/moviebot/genre3.png" class="img-responsive" width="300px"><img>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                </div>
+            </div>
+            <span style="display:block; height: 40px;"> </span>
+            <div class="darkBg">
+                <span style="display:block; height: 40px;"> </span>
+                <div class="row">
+                    <p class="sectionTitle">Problems</p>
+                    <span style="display:block; height: 10px;"> </span>
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <p class="introPara">
+                            I later figured out how to implement the bot on Watson's conversation API. The 'Genre Based' box was gone. A simple, 'Horror movie' would do it. I thought it was going well, until somedays later there was this particular case.</p>
+                    </div>
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                </div>
+            <div class="row">
+                <span style="display:block; height: 20px;"> </span>
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="col-md-4 col-xs-6">
+                            <img src="img/moviebot/Tarantino1.jpg" class="img-responsive shadow" width="400px"><img>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <img src="img/moviebot/Tarantino2.jpg" class="img-responsive shadow" width="400px"><img>
+                        </div>
+                        <span style="display:block; height: 20px;"> </span>
+                        <div class="col-md-4">
+                            <p class="introPara"> One of my users wanted to watch a Tarantino movie. Well, my bot wasn't ready to understand or execute any of that. I figured that even if I didn't understand something, I won't throw out 'Help Desk' messages because they are annoying, so I kept on suggesting random movies. This definitely might have ticked him off. 
+                            TLDR; My bot was sweared at. </p> 
+                        </div>
+                        </div>
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                    
+            </div>
+            <span style="display:block; height: 40px;"> </span>
+        </div>
+            <span style="display:block; height: 40px;"> </span>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="col-md-7 col-xs-12">
+                            <p class="introPara">I implemented 'People Based Search'. I had to add a ton of people as entities to train Watson on when to Search for people. The API returned top 3 movies after a search query. Error handling was the toughest part because the API wasn't too forgiving. If a random search term was passed, the API would fail and so did the code. After this, I had similar encounters where a user would ask for something my bot couldn't do and I would find out about another new feature to implement.   </p>
+                            <img src="img/moviebot/TarantinoSol.png" class='img-responsive'></img>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <img src="img/moviebot/Tarantino3.jpg" class="img-responsive shadow" width="350px"></img>
+                        </div>
+                        <span style="display:block; height: 20px;"> </span>
+
+
+                    </div>
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                </div>
+            </div>
+            <span style="display:block; height: 40px;"> </span>
+            <div class="darkBg">
+                <span style="display:block; height: 40px;"> </span>
+                <p class="sectionTitle">Now</p>
+                <span style="display:block; height: 20px;"> </span>
+                <div class="row">
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="col-md-4 col-xs-4">
+                            <center><img src="img/moviebot/Screen1.jpg" class="img-responsive shadow" width="220"></img></center>
+                            <span style="display:block; height: 25px;"> </span>
+                            <center><p class="introPara" style="font-size:15px" class="explain">Basic Hi/Hello situation. The message has a direct postback button to suggest movies right out the gate and that is very much intended. As this is still in development mode, I can't afford Watson's API charges so I have to limit it's usage.</p></center>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <center><img src="img/moviebot/Screen2.jpg" class="img-responsive shadow" width="220"></img></center>
+                            <span style="display:block; height: 25px;"> </span>
+                            <center><p class="introPara" style="font-size:15px" class="explain">The Random Movie generates a postback and then my code requests TMDb API a random movie from their 'popular' collection. All the information collected is displayed in a compact form with a generic template.</p></center>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <center><img src="img/moviebot/Screen3.jpg" class="img-responsive shadow" width="220"></img></center>
+                            <span style="display:block; height: 25px;"> </span>
+                            <center><p class="introPara" style="font-size:15px" class="explain">Any unidentified Intent is passed as a search query to TMDb API. My code checks for a satisfactory response otherwise throws a 404. Same goes for 'People based' search. Also, movie search has a 'similar movies' option.</p></center>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                </div>
+                <span style="display:block; height: 60px;"> </span>
+                <div class="row">
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="col-md-4 col-xs-4">
+                            <center><img src="img/moviebot/Screen4.jpg" class="img-responsive shadow" width="220"></img></center>
+                            <span style="display:block; height: 25px;"> </span>
+                            <center><p class="introPara" style="font-size:15px" class="explain">If the recognized Intent is #Genre but it doesn't belong to any @entity, the bot asks for a proper genre and then suggests a movie accordingly. 'Another', 'next', etc. give another movie in the same genre. </p></center>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <center><img src="img/moviebot/Screen5.jpg" class="img-responsive shadow" width="220"></img></center>
+                            <span style="display:block; height: 25px;"> </span>
+                            <center><p class="introPara" style="font-size:15px" class="explain">Similar to the Tarantino situation, people kept on asking for Theatre related information so I used the Google Places API that returns closest theatres to a pin. </p></center>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <center><img src="img/moviebot/Screen6.jpg" class="img-responsive shadow" width="220"></img></center>
+                            <span style="display:block; height: 25px;"> </span>
+                            <center><p class="introPara" style="font-size:15px" class="explain">If nothing pans out and the bot is really unintuitive for the user, there's always a help desk. I've improved it to display examples so it's easier to understand. Plus, the bot can also do common small talk.</p></center>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-xs-1">
+                    </div>
+                </div>
+                <span style="display:block; height: 40px;"> </span>
+
+            </div>
+            <div class="row">
+                <p class="sectionTitle">Forward</p>
+                <span style="display:block; height: 20px;"> </span>
+                <div class="col-md-1 col-xs-1">
+                </div>
+                <div class="col-md-10 col-xs-10">                        
+                        <img src="img/moviebot/Users.png" class="img-responsive imgRight" width="300px"></img>
+
+                        <p class="introPara">&nbsp; &nbsp; &nbsp; &nbsp; I've learnt a lot of things with this project. I started from Scratch and now I have a little experience with JavaScript and using APIs. I am not scared to my bones when I see the documentation anymore and I can find a new movie recommendation easily. The numbers on the right are the unique conversations by the bot in 28 days. </br></p>
+                        <p class="introPara" style="font-size:13px">These numbers are purely organic and don't even involve me sharing it with my friends.</p>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                </div>
+            </div>
+            <span style="display:block; height: 40px;"> </span>
+            <div class="row">
+                <div class="col-md-1 col-xs-1">
+                </div>
+                <div class="col-md-10 col-xs-10">
+                    <div class="col-md-3 col-xs-3">
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <center><p class="introPara" style="font-size:20px"> Try it out.<a href="http://m.me/moviebots"> <img src="img/moviebot/messenger.png" class="img-responsive" width="55"></img></a></p> </br></center>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                        <center><p class="introPara" style="font-size:20px">Watch demo.<a href="https://www.youtube.com/watch?v=pelad-hQSFY"> <img src="img/moviebot/YouTube.png" class="img-responsive" width="55"></img></a></p> </br></center>
+                    </div>
+                    <div class="col-md-3 col-xs-3">
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 col-xs-1">
+                </div>
+                <div class="col-md-10 col-xs-10">
+                    <p class="introPara"> The next step for this bot would be to implement a database so it could handle accounts of each user and ask for a list of movies they have already seen and liked. Then using Machine Learning, provide a movie suggestion that the user is bound to like. </p>
                 </div>
                 <div class="col-md-1 col-xs-1">
                 </div>

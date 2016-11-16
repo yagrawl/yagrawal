@@ -30,6 +30,14 @@
     font-size: 36px;
 }
 
+.sectionTitle {
+    font-family: Axis, sans-serif;
+    font-size: 30px;
+    color: #0184FE;
+    margin: 10px 10% 0%
+
+}
+
 .introPara {
     font-family: Grotesk, sans-serif;
     font-size: 24px;
@@ -49,6 +57,42 @@
     background-size: cover;
 }
 
+.errorHandling {
+    background: url('../img/moviebot/heroku.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.darkBg {
+    background-color: #D3D3D3;
+}
+
+.errorText {
+    font-family: Grotesk, sans-serif;
+    font-size: 24px;
+    font-weight: Regular;
+    color: white;
+    margin: 10px 10% 0%
+}
+
 .topPara {
     margin-left: 10%;
 }
+
+.imgLeft {
+    float: left;
+    margin: 0 5% 0 0%;
+}
+
+.imgRight {
+    float: right;
+    margin: 0 0 0 5%;
+}
+
+.shadow {
+    box-shadow: 1px 1px 10px #888888;
+}
+
+

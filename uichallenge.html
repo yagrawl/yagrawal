@@ -1,0 +1,59 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>UI Challenge</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Stylesheets -->
+        <link href="css/uichallenge.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!--JavaScript Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--jQuery -->
+        <script src="js/jquery.js"></script>
+        <script src="js/countUp.js"></script>
+
+    </head>
+    <body>
+        <script>
+            var options = {
+              useEasing : true, 
+              useGrouping : true, 
+              separator : ',', 
+              decimal : '.', 
+              prefix : '', 
+              suffix : '' 
+            };
+            var demo = new CountUp("count", 24.02, 94.62, 0, 2, options);
+            demo.start();
+        </script>
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <p class="introPara count">0</p>
+                <h1 class="jumbo" id="myTargetElement">0</h1>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <footer class="container-fluid base">
+            <div class="row">
+                <hr>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-2">
+                    <h5>&copy; Yash Agrawal
+                </div>
+                <div class="col-md-9">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

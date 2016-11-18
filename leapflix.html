@@ -1,0 +1,144 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>LeapFlix</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+        <!-- Stylesheets -->
+        <link href="css/leapflix.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!--JavaScript Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--jQuery -->
+        <script src="js/jquery.js"></script>
+        <script src="js/countUp.js"></script>
+
+    </head>
+    <body>
+        <div class="row fixed-bg bg">
+            <center><img src="img/leapflix/leapflixIcon.png" class="img-responsive"  width="270"> </img></center>
+            <span style="display:block; height: 150px;"> </span>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-10 col-xs-10">
+                <p class="introPara">
+                    LeapFlix was designed to be a Chrome Extension which would skip through intros of popular TV shows on Netflix. Some shows have cold openning and terribly long intros. House of cards has a 90 second video of timelapses from Washington which gets a little boring to watch while binging, so I thought this was required. </p>
+                    <span style="display:block; height: 25px;"> </span>
+                    <center><img src="img/leapflix/leapflixTaskbar.png" class="img-responsive" width="700px"> </img></center>
+                    <span style="display:block; height: 25px;"> </span>
+                <o class="introPara">
+                    Since I watch this in Chrome, building a chrome extension seemed like an obvious choice. I researched the topic further and got to a <a href="http://webapps.stackexchange.com/questions/86136/is-there-a-way-to-link-to-a-netflix-movie-at-specific-time">forum</a> which suggested appending a '&t=300' at the end of the current URL to make the video skip by 5 minutes. It all seemed getting a bit more clear. I had to make an extension which would grad the URL and then would append the required amount of time as per the show. Seems pretty straightforward and easy. There was just one catch. I didn't know how to make a Chrome Extension. 
+                </p>
+            </div>
+            <div class="col-md-1 col-xs-1">
+            </div>
+        </div>
+        <span style="display:block; height: 45px;"> </span>
+        <div class="row">
+            <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-10 col-xs-10">
+                <img src="img/leapflix/leapflixIcon.png" class="imgLeft"  width="250"> </img>
+                <p class="introPara">
+                    Before starting anything, I went straight to Affinity Designer and made myself a logo. Design is my first preference. People do judge a book by it's cover so whatever the app does or does not do, it has got to look good. Then I started working on the tutorial and did the basic steps of making popup.html and popup.js. I worked on the basic design which wasn't anything too special - just the logo and a button.
+                </p>
+            </div>
+            <div class="col-md-1 col-xs-1">
+            </div>
+        </div>
+        <span style="display:block; height: 45px;"> </span>
+        <div class="row darkbg">
+            <span style="display:block; height: 45px;"> </span>
+            <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-10 col-xs-10">
+                <img src="img/leapflix/leapflixOld.png" class="imgRight"  width="200"> </img>
+                <p class="introPara" style="color:white">
+                    Now I tried testing it out on <b>House of Cards</b> because that's one of my favorite shows. After the click of the button, the extension would get the URL of the active tab and then append '&t=96' at the end and finally reload it. </br> </p>
+                    <center>    <code> document.getElementById('getUrl') </code> </center> </br> 
+                <p class="introPara" style="color:white">
+                    The first episode I played did not have a cold opening and so my extension worked perfectly. I skipped through the intro and reloaded exactly when the episode starts. The extension was working! Awesome! Well, not so much. When I tried testing it out on the very next episode, I waited till the intro began (This episode had a cold opening) so when it did I launched the extension and waited for it to reload. It just took me to 1 minute 36 seconds down the episode instead of skipping the intro. The time parameter obviously loads from t = 0.
+                </p>
+                <span style="display:block; height: 55px;"> </span>
+            </div>
+            <div class="col-md-1 col-xs-1">
+            </div>
+        </div>
+        <div class="row darkbg">
+            <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-10 col-xs-10">
+                <img src="img/leapflix/leapflixCurrentScreen.png" class="imgRight"  width="200"> </img>
+                <p class="introPara" style="color:white">
+                    I obviously needed to somehow monitor the time from the beginning to when the intro starts so the first thing that came to my mind is adding a clock button which should be started as soon as the episode does. That also required looking up stuff online but it worked out quickly. </p> </br>
+                <p class="introPara" style="color:white">
+                    The second step was fairly obvious and so I could just append the time of the clock added with the intro time to properly skip the intro. I tested it again and it worked out just fine. Aweosme! Now I went on to my favorite shows and checked their intro time. I checked the TrackId in the URL and updated the code accordingly to add time depending on the show. </br>
+                </p>
+                <p class="introPara" style="color:white">
+                    I added about 10 different shows and then went on to test them. It worked perfectly every time and I thought I had a useful program right there. I closed the tabs and went on to upload everything to the Chrome Webstore. This was going to be my first ever extension so I paid the $5 fee, uploaded the app and waited for 60 minutes to get it published. </br>
+                </p>
+                <span style="display:block; height: 55px;"> </span>
+            </div>
+            <div class="col-md-1 col-xs-1">
+            </div>
+        </div>
+        <span style="display:block; height: 25px;"> </span>
+        <div class="row">
+            <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-10 col-xs-10">
+                <p class="introPara">
+                    &nbsp; &nbsp; &nbsp; &nbsp;I download my extension from the Web Store, logged back into Netflix and checked it out. Failed! It skipped to some random time. I figured out that it was running the case when no known show was detected. I was playing <b>House of Cards</b> and it should have worked. 
+                </p> </br>
+                <p class="introPara">
+                    After some research I found out how Netflix actually works. The sources I used are not too reliable because Netflix doesn't release any of this information officially. Since Netflix has such a huge library, it is phsyically impossible for an individual to go through every thing so instead of loading the entire library and requiring large amounts of memory and processing time, Netflix uses something called a <a href="https://en.wikipedia.org/wiki/Sparse_matrix"> Sparse Matrix </a> 
+                </p> </br>
+
+            </div>
+            <div class="col-md-1 col-xs-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-xs-1">
+            </div>
+            <div class="col-md-10 col-xs-10">
+                <img src="img/leapflix/sparseMatrix.svg" class="imgRight"></img>
+                <p class="introPara">&nbsp; &nbsp; &nbsp; &nbsp; So a sparse matrix as shown in the right is a matrix that contains a majority of zeros. So let's just say that each video title in the Netflix library is a number other than 0. </br>
+                Instead of carrying the entire matrix information, Sparse matrix just carries the information of the location where a number is non-zero thus saving considerable amount of prosessing effort. Also, these positions keep on changing each session so the trackID is nothing more than the position of the Title in a particular session for that particular user. Basically, my entire procedure of finding the show based on URL was flawed and hence the extension failed to serve it's purpose. This was an entire weekend worth of work that resulted into nothing, but it did teach me a lot. It taught how to make a basic chrome extension and get an insight on how Netlflix might be working. 
+                </p>
+                <span style="display:block; height: 25px;"> </span>
+                <img src="img/leapflix/leapflixWebstore.png" class="img-responsive"></img>
+                <span style="display:block; height: 25px;"> </span>
+                <p class="introPara">
+                    I updated the Chrome Web Store info of the extension to 'outdated' and I apologize to the 15 something people that installed it on the first day before the update.
+                </p>
+                <span style="display:block; height: 25px;"> </span>
+                <img src="img/leapflix/leapflixInstalls.png" class="img-responsive"></img>
+            </div>
+            <div class="col-md-1 col-xs-1">
+            </div>
+        </div>
+        <footer class="container-fluid base">
+            <div class="row">
+                <hr>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-2">
+                    <h5>&copy; Yash Agrawal
+                </div>
+                <div class="col-md-9">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

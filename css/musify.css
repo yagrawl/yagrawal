@@ -16,3 +16,19 @@
     font-size: 72px;
     margin-top: 50px;
 }
+
+.caption {
+    font-family: Grotesk, sans-serif;
+    font-size: 14px;
+    font-weight: Regular;
+}
+
+.imgLeft {
+    float: left;
+    margin: 0 5% 0 0%;
+}
+
+.imgRight {
+    float: right;
+    margin: 0 0 0 5%;
+}

@@ -94,3 +94,18 @@ img.inact{
     left: 20px;
     z-index:1; 
 }
+
+.social a{
+  color: gray;
+}
+.social a:link {
+  color: gray;
+}
+
+.social a:hover {
+  color: black;
+}
+
+.social a:active {
+  color: black;
+}

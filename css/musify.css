@@ -1,0 +1,18 @@
+.fixed-bg {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: auto;
+}
+
+.fixed-bg.bg {
+  background-image: url("../img/musify/bg.png");
+}
+
+.titleMusic {
+    font-family: 'Lobster', cursive;
+    font-size: 72px;
+    margin-top: 50px;
+}

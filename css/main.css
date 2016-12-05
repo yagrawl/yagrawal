@@ -28,6 +28,11 @@ font-family: 'Montserrat', sans-serif; */
     font-weight: Light;
 }
 
+@font-face {
+    font-family: Nexa;
+    src: url(fonts/Nexa-Bold.otf);
+}
+
 .headingContainer {
     margin: 25px 100px 
 }
@@ -41,7 +46,10 @@ font-family: 'Montserrat', sans-serif; */
     margin: 40px 10% 10% 
 }
 
-
+.mastercard {
+  font-family: Nexa, sans-serif;
+  font-size: 24px;
+}
 
 .introPara {
     font-family: Grotesk, sans-serif;
@@ -109,3 +117,23 @@ img.inact{
 .social a:active {
   color: black;
 }
+
+a.mastercard {
+  color: black;
+}
+
+a.mastercard:link {
+  color: black;
+}  
+
+a.mastercard:visited {
+  color: black;
+}  
+
+a.mastercard:hover {
+  color: black;
+}  
+
+a.mastercard:active {
+  color: black;
+}  

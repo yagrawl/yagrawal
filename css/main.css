@@ -78,7 +78,7 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 
-img.inact:hover {
+img.inact:hover, img.inact:active{
   -webkit-filter: grayscale(0%);
   -webkit-transition: .5s ease-in-out;
   -moz-filter: grayscale(0%);
@@ -142,6 +142,6 @@ a.mastercard:active {
   transition: all .2s ease-in-out; 
 }
 
-.grow:hover { 
+.grow:hover, .grow:active{ 
   transform: scale(1.1); 
 }

@@ -1,7 +1,7 @@
 # yagrawal
 Personal Portfolio Website 
 
-link : http://www.yagrawal.com
+link : https://www.yagrawal.com
        OR
        https://yagrawl.github.io/yagrawal
 
